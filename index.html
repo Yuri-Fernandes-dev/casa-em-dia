@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa em Dia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Itens da Casa</h1>
+        </header>
+
+        <main>
+            <section id="formAdicionar" class="form-section">
+                <form id="formNovoItem">
+                    <input 
+                        type="text" 
+                        id="nomeItem" 
+                        placeholder="Digite o nome do item" 
+                        required
+                    >
+                    <select id="statusItem" required>
+                        <option value="OK">OK</option>
+                        <option value="Acabando">Acabando</option>
+                        <option value="Acabou">Acabou</option>
+                    </select>
+                    <button type="submit">Adicionar Item</button>
+                </form>
+            </section>
+
+            <section id="listaItens" class="items-section">
+                <div id="listaContainer" class="items-grid">
+                    <!-- Items serão inseridos aqui via JavaScript -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
